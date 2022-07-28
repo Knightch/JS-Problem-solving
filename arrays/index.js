@@ -26,3 +26,16 @@ console.log("length of array is " + daysOfWeeks6thWay.length)
 for (let i = 0; i < daysOfWeeks6thWay.length; i++) {
     console.log(daysOfWeeks6thWay[i])
 }
+
+//  declare array
+var fibonacci = [];
+fibonacci[0] = 1;
+fibonacci[1] = 1;
+
+for (let i = 2; i < 20000000; i++) {
+    fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+}
+
+for(let i=0;i<fibonacci.length;i++){
+    console.log(`value of fibonacci index of ${i} is ${fibonacci[i]}`)
+}
